@@ -5,7 +5,26 @@
 </head>
 <body>
 <h1 style="text-align: center;">Beginner Front End Learning Path</h1>
+
+<script>
+    const name = prompt("What is your name?");
+    <p id="demo"></p>
+
+    if (new Date().getHours() >= 12) {
+    document.getElementById("demo").innerHTML = 
+    `Good afternoon, ${name}`;
+    } else if (new Date().getHours()< 12) {
+    document.getElementById("demo").innerHTML = 
+    `Good morning, ${name}`;
+    } else {document.getElementById("demo").innerHTML = 
+    `Good Evening, ${name}`;
+    }
+
+</script>
+
+
 </body>
+<footer>
 
-
+</footer>
 </html>
